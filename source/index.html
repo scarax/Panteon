@@ -5,8 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Panteon</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 col-md-4 col-lg-2">
+          <a class="header__logo" href="/">
+            <img class="header__logo-image" src="img/logo.png" alt="Panteon">
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-7">
+          <div class="intro">
+            <h1 class="intro__title">
+              Пункт назначения: <span class="intro__name">Пантеон,</span><br>
+              <span class="intro__destination">Марс</span>
+            </h1>
+            <div class="intro__video video">
+              <a class="video__link" href="https://youtu.be/WrLRKP-s0j0">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/WrLRKP-s0j0/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/WrLRKP-s0j0/maxresdefault.jpg" alt="Box Shooter - геймплей игры">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+              <span class="video__description">Первый город на&nbsp;планете Марс недалеко от горы Олимп</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="js/video.js"></script>
 </body>
 </html>
