@@ -141,6 +141,63 @@
   margin-bottom: 3em;
   font-weight: 300;
 }
+.info {
+  padding: 3em 0 12em;
+}
+.info__title {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 2rem;
+  color: $clr-accent;
+}
+.info__frame {
+  margin: 0 auto;
+  margin-bottom: 4em;
+  width: 165px;
+  height: 190px;
+  box-shadow: inset 0 0 0 10px $clr-accent;
+}
+.info__frame--desktop {
+  display: none;
+}
+.info__frame-image {
+  position: relative;
+  top: 2rem;
+  left: -2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info__subtitle {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  color: #000;
+}
+.info__text {
+  margin: 0;
+  margin-bottom: 1.75em;
+  font-weight: 300;
+}
+.info__quote {
+  position: relative;
+  margin: 0;
+  margin-bottom: 1.25em;
+  font-size: rem(18);
+  color: $clr-accent;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1em;
+    left: -0.5em;
+    display: block;
+    @include size(16px);
+    background-image: url('../img/left-quote.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 @media (min-width: 768px) {
   .header {
     padding-top: 1.5em;
@@ -170,6 +227,22 @@
   }
   .about__title {
     font-size: 3rem;
+  }
+  .info {
+    padding-bottom: 6em;
+  }
+  .info__title {
+    font-size: 3rem;
+  }
+  .info__frame {
+    float: right;
+    margin-left: 3.5rem;
+  }
+  .info__frame--desktop {
+    display: block;
+  }
+  .info__frame--mobile {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -207,5 +280,23 @@
   }
   .about__title {
     font-size: 3.75rem;
+  }
+  .info__title {
+    font-size: 3.75rem;
+  }
+  .info__frame {
+    margin-left: 7.25em;
+    margin-bottom: 7.25em;
+    width: 325px;
+    height: 372px;
+  }
+  .info__frame-image {
+    top: 3rem;
+    left: -3rem;
+  }
+  .info__quote {
+    &::before {
+      left: -1.75em;
+    }
   }
 }
